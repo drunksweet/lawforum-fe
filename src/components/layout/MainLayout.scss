@@ -1,0 +1,16 @@
+@import '@/styles/variables.scss';
+@import '@/styles/mixins.scss';
+
+.main-layout {
+  min-height: 100vh;
+  
+  .main-content {
+    min-height: 100vh;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .main-layout {
+    background-color: $dark-bg-color;
+  }
+}
