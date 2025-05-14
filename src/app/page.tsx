@@ -4,7 +4,7 @@ import MainLayout from "@/components/layout/MainLayout"
 import React, { useState } from 'react';
 import styles from './page.module.css';
 import { useRouter } from "next/navigation";
-import MainHeader from "@/components/header/MainHeader";
+// import MainHeader from "@/components/header/MainHeader";
 import PostList from "@/components/postlist/PostList";
 
 const tablist = [
@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <MainLayout>
       <div className={styles.homePage}>
-        <MainHeader/>
+        {/* <MainHeader/> */}
         <div 
         style={{ 
           width:1248,

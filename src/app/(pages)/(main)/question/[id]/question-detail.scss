@@ -1,0 +1,223 @@
+.question-detail-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      margin-right: 20px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      
+      .question-title {
+        margin-bottom: 16px;
+        font-weight: 600;
+      }
+      
+      .question-meta {
+        margin-bottom: 24px;
+      }
+      
+      .question-content {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 16px;
+      }
+      
+      .question-item {
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 8px;
+      }
+      
+      .question-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin: 24px 0;
+        
+        .image-container {
+          width: calc(50% - 8px);
+          
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+          }
+          
+          @media (max-width: 576px) {
+            width: 100%;
+          }
+        }
+      }
+      
+      .answer-section {
+        background-color: #f9f0f3;
+        border-radius: 4px;
+        padding: 20px;
+        margin: 24px 0;
+        
+        .lawyer-info {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          
+          .lawyer-avatar {
+            margin-right: 16px;
+          }
+          
+          .lawyer-details {
+            .lawyer-name-tag {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              margin-bottom: 4px;
+              
+              .lawyer-title {
+                color: #666;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+        
+        .answer-content {
+          font-size: 16px;
+          line-height: 1.8;
+          margin-bottom: 16px;
+        }
+        
+        .answer-actions {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+          .chat-button {
+            background-color: #b83b5e;
+            border-color: #b83b5e;
+            
+            &:hover, &:focus {
+              background-color: #c04f6e;
+              border-color: #c04f6e;
+            }
+          }
+        }
+      }
+      
+      .comments-section {
+        margin: 24px 0;
+        
+        .section-title {
+          margin-bottom: 16px;
+        }
+        
+        .comment-item {
+          padding: 16px 0;
+          
+          .comment-user {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+        }
+      }
+      
+      .comment-input {
+        margin-top: 24px;
+        
+        .ant-input {
+          margin-bottom: 16px;
+        }
+        
+        .ant-btn-primary {
+          background-color: #b83b5e;
+          border-color: #b83b5e;
+          float: right;
+          
+          &:hover, &:focus {
+            background-color: #c04f6e;
+            border-color: #c04f6e;
+          }
+        }
+      }
+    }
+    
+    .sidebar {
+      width: 300px;
+      
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+      
+      .sidebar-card {
+        margin-bottom: 20px;
+        
+        .ant-card-head {
+          border-bottom: 2px solid #f0f0f0;
+          
+          .ant-card-head-title {
+            font-weight: 600;
+          }
+        }
+        
+        .related-item {
+          padding: 12px 0;
+          
+          .related-title {
+            display: block;
+            margin-bottom: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+        
+        .lawyer-item {
+          padding: 12px 0;
+          
+          .lawyer-name-tag {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+        }
+      }
+    }
+    
+    .bottom-actions {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border-top: 1px solid #f0f0f0;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      z-index: 10;
+      
+      .ant-btn {
+        font-size: 16px;
+        
+        &.liked {
+          color: #b83b5e;
+        }
+      }
+    }
+  }
+  

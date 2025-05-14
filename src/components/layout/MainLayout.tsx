@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import MainHeader from "@/components/header/MainHeader";
 import { Layout, ConfigProvider, theme } from "antd"
 import { useTheme } from "next-themes"
 import "./MainLayout.scss"
@@ -25,6 +26,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       }}
     >
       <Layout className="main-layout">
+        {/* <MainHeader /> */}
         <Content className="main-content">{children}</Content>
       </Layout>
     </ConfigProvider>
