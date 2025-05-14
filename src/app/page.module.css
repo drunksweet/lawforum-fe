@@ -15,7 +15,65 @@
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
+.homePage{
+  background-color: #FAF9FE;
+ 
+}
+.header{
+  height: 64px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding-left: 40px;
+  padding-right: 55px;
+}
+.logo{
+  margin-top: auto;
+  
+}
 
+.input{
+  margin-left: -50;
+  border-radius: 4;
+  width: 532;
+  font-size: 14;
+  color: #9CA3AF;
+}
+
+.headerButton{
+  width: 74px;
+  height: 40px;
+  border-radius: 4px;
+  margin-left: 38px;
+}
+.headerList{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.tablistItem{
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+  display: 'flex';
+  justify-content: 'center';
+  
+
+}
+.main{
+  width: 1248px;
+  height: 620px;
+  /* background-color: #9CA3AF; */
+  margin-left: 96px;
+  margin-top: 24px;
+  /* 自动布局 */
+  display: flex;
+  padding: 0px;
+  gap: 0px 32px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  z-index: 1;
+}
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
